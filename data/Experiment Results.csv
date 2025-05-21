@@ -1,0 +1,562 @@
+Project ,Method,Model,Approach,Original Violations,Resolved Violations,Unresolved Violations,Introduced Issues,Split Count,Cyclomatic (Before),Cognitive (Before),NPath (Before),LOC (Before),Cyclomatic Max (After),Cognitive  Max (After),NPath Max  (After),LOC Max (After) ,Cyclomatic Avg (After),Cognitive  Avg (After),NPath Avg  (After),LOC Avg  (After) ,Average reduction ,Reduction Effectiveness,Tests Total,Passed,Failed,Effectiveness level,Notes,Column 1,
+cobertura,preprocessCommandLineArguments(String[] args), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,2,11,16,,44,5,6,,13,4.5,4,,12.5,62.50%,Moderate,5,4,1,Ineffective(Test Fails),uses Java's modern try-with-resources statement,,
+cobertura,preprocessCommandLineArguments(String[] args), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,11,16,,44,4,3,,13,3,1.75,,8.75,71.78%,Moderate,5,5,0,Moderate,"Redundant flag removed
+uses Java's modern try-with-resources statement
+Single responsibility principle",,"
+"
+cobertura,preprocessCommandLineArguments(String[] args), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,11,16,,44,5,6,,13,3.67,3,,10.33,62.50%,Moderate,5,4,1,Ineffective(Test Fails),"Redundant flag removed
+uses Java's modern try-with-resources statement
+Single responsibility principle",,
+cobertura,preprocessCommandLineArguments(String[] args), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,11,16,,44,5,3,,13,3.67,3,,10.33,68.75%,Moderate,5,4,1,Ineffective(Test Fails),"Redundant flag removed
+uses Java's modern try-with-resources statement
+Single responsibility principle",,
+cobertura,preprocessCommandLineArguments(String[] args), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,1,11,16,,44,8,9,,26,8,9,,26,37.31%,Low,5,3,2,Ineffective(Test Fails),"Redundant flag removed
+",,
+cobertura,preprocessCommandLineArguments(String[] args), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,11,16,,44,5,6,,13,3.67,3,,10.67,62.50%,Moderate,5,5,1,Ineffective(Test Fails),"Redundant flag removed
+uses Java's modern try-with-resources statement
+Single responsibility principle",,
+cobertura,merge(CoverageData coverageData), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,2,11,18,,31,5,10,,15,4,6,,12.5,50.20%,Moderate,7,,,Ineffective(Error or Untestable),"Caused type inference failure due to generic method usage with raw or unresolved types
+Build failed",,
+cobertura,merge(CoverageData coverageData), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,4,11,18,,31,3,2,,11,3,2,,10.25,75.38%,Moderate,7,,,Ineffective(Error or Untestable),"Caused type inference failure due to generic method usage with raw or unresolved types
+Build failed",,
+cobertura,merge(CoverageData coverageData), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,18,,31,3,3,,8,2.67,2.4,,7.83,76.75%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+cobertura,merge(CoverageData coverageData), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,11,18,,31,3,3,,8,2.43,2.4,,7.14,76.75%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+cobertura,merge(CoverageData coverageData), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,2,11,18,,31,5,10,,15,4,6,,14.5,50.20%,Moderate,7,,,Ineffective(Error or Untestable),Type safety issues wiht generic wildcards,,
+cobertura,merge(CoverageData coverageData), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,7,11,18,,31,5,7,,17,1.86,3,,6.29,53.61%,Moderate,7,,,Ineffective(Error or Untestable),Uses a method that doesn't exist,,
+strimzi/strimzi-kafka-operator,adminClientConfig(), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,,18,21,630,45,,,,,,,,,#N/A,#N/A,16,,,Ineffective(Error or Untestable),"LLM response only lists fields instead of providing the required refactored method.
+",,88
+strimzi/strimzi-kafka-operator,adminClientConfig(), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,3,18,21,630,45,10,11,15,18,6.33,6.33,7.67,14.67,62.42%,Moderate,16,16,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,adminClientConfig(), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode, NPathComplexity",,No,7,18,21,630,45,6,4,6,12,3.43,2.33,3.43,8,80.00%,Moderate,16,16,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,adminClientConfig(), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode, NPathComplexity",,No,7,18,21,630,45,5,4,6,11,3,2,3.29,7.71,81.94%,High,16,13,3,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,adminClientConfig(), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,18,21,630,45,8,8,15,17,3.13,3.4,4.13,7.63,69.33%,Moderate,16,16,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,adminClientConfig(), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,7,18,21,630,45,6,6,5,12,3.14,2.67,3,7.43,77.66%,Moderate,16,16,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,12,,,29,5,,,,3.75,,,,58.33%,Moderate,5,5,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,12,,,29,7,,,,7,,,,41.67%,Low,5,5,0,Low,"Mixed responsibilities
+reduced code size,
+",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,12,,,29,5,,,,3.75,,,,58.33%,Moderate,5,5,0,Moderate,"Single responsibility principle
+Enhanced structure
+improves error context isolation",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,12,,,29,7,,,,7,,,,41.67%,Low,5,5,0,Low,"functional programming approach
+Streamlined validation process",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,12,,,29,8,,,,4,,,,33.33%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure
+improves error context isolation",,
+strimzi/strimzi-kafka-operator,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)", Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,4,12,,,29,3,,,,2.5,,,,75.00%,Moderate,5,4,1,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure
+Improves error context isolation
+functional style
+Three more tests failed, indirectly testing the method through adminClientConfig() ",,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,26,5,,,,4,,,,50.00%,Moderate,1,1,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,,,,2,10,,,26,7,,,,5.5,,,,30.00%,Low,1,1,0,Low,,,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,26,5,,,,4,,,,50.00%,Moderate,1,1,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,2,10,,,26,7,,,,5.5,,,,30.00%,Low,1,1,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,Yes,4,10,,,26,5,,,,4,,,,50.00%,Moderate,1,,,Ineffective(Error or Untestable),Introduces non-existing class,,
+strimzi/strimzi-kafka-operator,validateLogging(Logging logging), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,Yes,3,10,,,26,5,,,,4,,,,50.00%,Moderate,1,,,Ineffective(Error or Untestable),Introduces non-existing class,,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,6,16,23,,42,5,3,,10,3.33,2.33,,8.33,77.30%,Moderate,9,,,Ineffective(Error or Untestable),Introduces non-existing class,,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,5,16,23,,42,5,4,,11,4,3,,9.4,75.06%,Moderate,9,,,Ineffective(Error or Untestable),"Uses a method that doesn't exist, type mismatch ",,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,6,16,23,,42,5,3,,10,3.33,2.33,,8.17,77.30%,Moderate,9,,,Ineffective(Error or Untestable),Introduces non-existing class,,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,16,23,,42,9,7,,13,4.75,4,,11,60.79%,Moderate,9,3,6,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,5,16,23,,42,9,7,,11,4,4,,9,62.37%,Moderate,9,,,Ineffective(Error or Untestable),Uses a method thata doesn't exist,,
+strimzi/strimzi-kafka-operator,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,16,23,,42,9,7,,11,4,4,,9,62.37%,Moderate,9,3,6,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", Gemini 2.0 Flash,HYBRID,"ExcessiveLinesOfCode, CognitiveComplexity","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,,17,,31,,3,,18,,2.5,,9.75,62.14%,Moderate,2,2,0,Moderate,"Single responsibility principle
+Enhanced structure
+Improves error handling",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", Gemini 2.0 Flash,LLM_ONLY,"ExcessiveLinesOfCode, CognitiveComplexity","CognitiveComplexity, ExcessiveLinesOfCode",,No,1,,17,,31,,5,,29,,5,,29,38.52%,Low,2,2,0,Low,"wliminated deep nesting 
+no method overhead",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", R1 Distill Qwen 32B,HYBRID,"ExcessiveLinesOfCode, CognitiveComplexity","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,,17,,31,,3,,18,,2.5,,9.75,62.14%,Moderate,2,2,0,Moderate,"Single responsibility principle
+Enhanced structure
+Improves error handling",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", R1 Distill Qwen 32B,LLM_ONLY,"ExcessiveLinesOfCode, CognitiveComplexity","CognitiveComplexity, ExcessiveLinesOfCode",,No,1,,17,,31,,5,,29,,5,,29,38.52%,Low,2,2,0,Low,"Single responsibility principle
+Enhanced structure
+Improves error handling",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", Llama 4 Maverick,HYBRID,"ExcessiveLinesOfCode, CognitiveComplexity","ExcessiveLinesOfCode, CognitiveComplexity",,No,4,,17,,31,,2,,10,,1.5,,8.5,77.99%,Moderate,2,1,1,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure
+Improves error handling",,
+strimzi/strimzi-kafka-operator,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)", Llama 4 Maverick,LLM_ONLY,"ExcessiveLinesOfCode, CognitiveComplexity","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,,17,,31,,2,,10,,1.5,,8.5,77.99%,Moderate,2,1,1,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure
+Improves error handling",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,36,7,,,15,4,,,11.33,44.17%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,36,7,,,13,4.33,,,11.67,46.94%,Low,5,,,Ineffective(Error or Untestable),"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,4,10,,,36,7,,,13,3.25,,,8.75,46.94%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,36,4,,,14,3,,,12,60.56%,Moderate,5,5,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,36,7,,,15,4,,,11.33,44.17%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,36,7,,,15,4,,,11.33,44.17%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,21,4,,,,3.67,,,,60.00%,Moderate,5,5,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,2,10,,,21,6,,,,5.5,,,,40.00%,Low,5,5,0,Low,,,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,Yes,4,10,,,21,4,,,,3.25,,,,60.00%,Moderate,5,,,Ineffective(Error or Untestable),"Type incompatibility issue. When changing to the correct type, all tests pass ",,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,Yes,2,10,,,21,6,,,,5.5,,,,40.00%,Low,5,,,Ineffective(Error or Untestable),"Type incompatibility issue. When changing to the correct type, all tests pass ",,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,21,6,,,,3.5,,,,40.00%,Low,5,5,0,Low,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)", Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,Yes,2,10,,,21,6,,,,6,,,,40.00%,Low,5,,,Ineffective(Error or Untestable),Uses a method thata doesn't exist,,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,11,13,25,642,52,4,5,5,19,2,1.5,2.55,6.27,77.98%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",ExcessiveLinesOfCode,No,1,13,25,642,52,9,9,192,34,9,9,192,34,49.87%,Low,10,10,0,Low,"Single method implementation
+Reduce method overhead 
+more complex lines and mixed responsibilities",,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,11,13,25,642,52,4,5,5,19,2.09,1.6,2.64,6.67,77.98%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",ExcessiveLinesOfCode,No,1,13,25,642,52,9,9,192,34,9,9,192,34,49.87%,Low,10,9,1,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,16,13,25,642,52,4,5,5,24,1.73,1.4,1.87,5.4,75.57%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,15,13,25,642,52,4,5,5,24,1.73,1.4,1.87,5.4,75.57%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,7,18,55,397,72,8,7,96,20,3.86,4,16.43,11.57,72.72%,Moderate,2,1,1,Ineffective(Test Fails),"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,1,18,55,397,72,4,5,4,11,4,5,4,11,88.10%,High,2,,,Ineffective(Error or Untestable),The response shows method declarations without implementations,,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,7,18,55,397,72,6,6,32,17,3.86,4,7.87,11.71,81.02%,High,2,1,1,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,1,18,55,397,72,4,5,4,11,4,5,4,11,88.10%,High,2,,,Ineffective(Error or Untestable),The response shows method declarations without implementations,,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,9,18,55,397,72,9,8,192,24,3,4.75,23.78,9.22,63.44%,Moderate,2,2,0,Moderate,"Single responsibility principle
+Enhanced structure",,
+strimzi/strimzi-kafka-operator,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,9,18,55,397,72,9,8,192,30,2.89,4.75,23.78,10.78,61.36%,Moderate,2,,,Ineffective(Error or Untestable),Missing return statement; adding it fixed the issues and all tests passed,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",ExcessiveLinesOfCode,No,9,16,15,4374,57,3,2,4,32,1.67,1.5,1.78,7.33,77.92%,Moderate,2,0,2,Ineffective(Test Fails),Excessive parapmeter count,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",Yes,2,16,15,4374,57,16,15,4374,57,,,,,0.00%,None,2,,,Ineffective(Error or Untestable),Syntax error: unnecessary escape character in string literal.,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",ExcessiveLinesOfCode,No,9,16,15,4374,57,3,2,3,32,1.67,1.5,1.67,7.67,77.93%,Moderate,2,0,2,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,ExcessiveLinesOfCode,Yes,4,16,15,4374,57,3,8,3,67,2.25,3,2.25,20.5,52.58%,Moderate,2,1,1,Ineffective(Test Fails),Excessive parapmeter count,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,16,15,4374,57,9,8,81,14,2.88,5,14.38,9.13,66.00%,Moderate,2,0,2,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,16,15,4374,57,9,8,81,17,2.88,5,14.38,9.13,64.69%,Moderate,2,0,2,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", Gemini 2.0 Flash,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","ExcessiveLinesOfCode, CognitiveComplexity",,No,4,15,,,36,5,,,15,3.25,,,9.25,62.50%,Moderate,7,5,2,Ineffective(Test Fails),duplicated code in conditional blocks,,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", Gemini 2.0 Flash,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,3,15,,,36,5,,,16,3.67,,,11,61.11%,Moderate,7,7,0,Moderate,"Eliminated redundant condition checks
+Single responsibility principle",,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", R1 Distill Qwen 32B,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,15,,,36,4,,,19,3,,,10.25,60.28%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+reduced duplication",,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", R1 Distill Qwen 32B,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,2,15,,,36,4,,,18,4,,,15,61.67%,Moderate,7,7,0,Moderate,Mixed responsibilities,,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", Llama 4 Maverick,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,Yes,4,15,,,36,4,,,12,3,,,8.75,70.00%,Moderate,7,,,Ineffective(Error or Untestable),"Required constructor argument was missing, adding it resolved the issues, but 2 tests failed",,
+strimzi/strimzi-kafka-operator,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)", Llama 4 Maverick,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,15,,,36,4,,,13,2.75,,,8.25,68.61%,Moderate,7,5,2,Ineffective(Test Fails),,,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,2,13,,1731,,4,,5,,2.5,,3,,84.47%,High,4,,,Ineffective(Error or Untestable),"missing variable reference
+Missing method parameter
+Uses a method thata doesn't exist",,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,6,13,,1731,,10,,216,,3.17,,38,,55.30%,Moderate,4,,,Ineffective(Error or Untestable),"referencce error
+type mismatch 
+access violation ",,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,12,13,,1731,,3,,4,,1.67,,2.17,,88.35%,High,4,,,Ineffective(Error or Untestable),introduces issues including missing methods and incompatible return types,,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,3,13,,1731,,13,,1731,,5,,577.67,,0.00%,None,4,,,Ineffective(Error or Untestable),introduces issues including missing methods and incompatible return types,,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,12,13,,1731,,3,,4,,2,,2.75,,88.35%,High,4,,,Ineffective(Error or Untestable),Introduced issues include type mismatch and unresolved method calls due to incorrect parameter types and method signature duplication,,
+strimzi/strimzi-kafka-operator,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, NPathComplexity","CyclomaticComplexity, NPathComplexity",,Yes,4,13,,1731,,4,,5,,1.75,,2,,84.47%,High,4,,,Ineffective(Error or Untestable),introduces issues including missing methods and incompatible return types,,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", Llama 4 Maverick,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,5,,15,,67,,12,,18,,3.8,,12.6,46.57%,Low,3,3,0,Low,"Extract method focused, straightforward.",,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", Llama 4 Maverick,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,5,,15,,67,,12,,17,,4,,11.8,47.31%,Low,3,3,0,Low,"Extract method focused, straightforward.",,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", Gemini 2.0 Flash,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","ExcessiveLinesOfCode, CognitiveComplexity",,Yes,6,,15,,67,,8,,24,,4.5,,12,55.42%,Moderate,3,,,Ineffective(Error or Untestable),Imported Set collection. Introduced type mismatch leading to compilation error. Unit tests not run.,,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", Gemini 2.0 Flash,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,1,,15,,67,,12,,44,,12,,44,27.16%,Low,3,3,0,Low,Introduced ternary expressions for more concise code. Inlined variables for cleaner iteration.,,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", R1 Distill Qwen 32B,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","ExcessiveLinesOfCode, CognitiveComplexity",,No,8,,15,,67,,6,,17,,3,,10.13,67.31%,Moderate,3,3,0,Moderate,"Extract method, SRP, duplication reduced. Ternary expression introduced to replace if-else expression.",,
+tablesaw,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)", R1 Distill Qwen 32B,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode",CognitiveComplexity,ExcessiveLinesOfCode,No,1,,15,,67,,11,,55,,11,,55,22.29%,Low,3,,,Ineffective(Error or Untestable),Rearranged existing code slightly. Hallucinated method. Unit tests not run due to compilation error.,,
+tablesaw,windowGrowthType(), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,16,4,,,11,1.75,,,5,45.63%,Low,5,5,0,Low,"Extract method focused, straightforward.",,
+tablesaw,windowGrowthType(), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,6,10,,,16,5,,,11,1.66,,,3.16,40.63%,Low,5,5,0,Low,"Extract method focused, straightforward.",,
+tablesaw,windowGrowthType(), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,16,4,,,10,1.75,,,4.75,48.75%,Low,5,5,0,Low,"Extract method focused, straightforward. SRP.",,
+tablesaw,windowGrowthType(), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,Yes,1,10,,,16,6,,,12,6,,,12,32.50%,Low,5,,,Ineffective(Error or Untestable),Introduced hallucinated method.,,
+tablesaw,windowGrowthType(), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,5,10,,,16,4,,,10,1.6,,,5,48.75%,Low,5,5,0,Low,"Extract method focused, straightforward. SRP.",,
+tablesaw,windowGrowthType(), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,2,10,,,16,4.5,,,18,4.5,,,11.5,21.25%,Low,5,5,0,Low,"Extract method focused, straightforward. SRP. Introduced switch-case instead of if-else.",,
+tablesaw,cast(), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,8,16,23,,73,10,9,,21,2.88,2.57,,9.25,56.53%,Moderate,2,2,0,Moderate,"Extract method, introduced Streams API.",,
+tablesaw,cast(), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,7,16,23,,73,10,4,,31,3.14,1.67,,11.57,59.21%,Moderate,2,,,Ineffective(Error or Untestable),Introduced Java type incompatibility issue (for a switch-case construct) resulting in compilation error.  Unit tests not run due to compilation error.,,
+tablesaw,cast(), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,8,16,23,,73,10,9,,21,2.88,3,,9.25,56.53%,Moderate,2,0,2,Ineffective(Test Fails),The refactoring changed the order of variable columns by calling a method too early. Tests relying on column order failed.,,
+tablesaw,cast(), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,2,16,23,,73,10,9,,34,5.5,7,,28,50.60%,Moderate,2,2,0,Moderate,Extract method. Simplified loops. Introduced forEach instead of for loops.,,
+tablesaw,cast(), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode, CyclomaticComplexity",,Yes,7,16,23,,73,10,9,,21,2.57,4.33,,10.14,56.53%,Moderate,2,,,Ineffective(Error or Untestable),Hallucinated an object type. Introduced type mismatch in a method's return statement.,,
+tablesaw,cast(), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity",ExcessiveLinesOfCode,Yes,1,16,23,,73,7,12,,34,7,12,,34,52.50%,Moderate,2,,,Ineffective(Error or Untestable),Hallucinated a method call.,,
+tablesaw,getQuarter(int packedDate), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,13,,,23,2,,,6,1.33,,,4.33,79.26%,Moderate,1,1,0,Moderate,,,
+tablesaw,getQuarter(int packedDate), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,2,13,,,23,2,,,7,1.5,,,5,77.09%,Moderate,1,1,0,Moderate,,,
+tablesaw,getQuarter(int packedDate), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,2,13,,,23,10,,,18,6,,,12,22.41%,Low,1,1,0,Low,"Extract method, SRP.",,
+tablesaw,getQuarter(int packedDate), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,13,,,23,2,,,7,2,,,7,77.09%,Moderate,1,1,0,Moderate,Replaced long switch-case construct (for months) with simple and more concise arithmetic.,,
+tablesaw,getQuarter(int packedDate), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,2,13,,,23,1.5,,,7,1.5,1,,7,79.01%,Moderate,1,1,0,Moderate,Replaced switch-case with single arithmetic expression in separate method.,,
+tablesaw,getQuarter(int packedDate), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,13,,,23,2,,,7,2,1,,7,77.09%,Moderate,1,1,0,Moderate,The refactoring replaced a switch statement with a concise arithmetic calculation using Month.ordinal() to determine the quarter.,,
+tablesaw,toSmileType(ColumnType type), Llama 4 Maverick,HYBRID,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,toSmileType(ColumnType type), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,toSmileType(ColumnType type), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,toSmileType(ColumnType type), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,toSmileType(ColumnType type), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,toSmileType(ColumnType type), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,13,,,25,13,,,16,13,,,16,18.00%,Minimal,1,,,Ineffective(Error or Untestable),Simply turned a long if structure into switch cases. Introduced Java type incompatibility issue resulting in compilation error. Unit tests not run due to compilation error.,,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,10,18,,39,5,5,,12,3.25,2.75,,8.5,63.82%,Moderate,2,,,Ineffective(Error or Untestable),Suggested refactoring caused overflow error. Attempted to map high precision numbers to a column type with longs. Unit tests not run due to compilation error.,,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,5,10,18,,39,4,3,,10,2.4,1.8,,7,72.56%,Moderate,2,,,Ineffective(Error or Untestable),Suggested refactoring caused overflow error. Attempted to map high precision numbers to a column type with longs. Unit tests not run due to compilation error.,,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,3,10,18,,39,5,5,,12,4,4,,10.67,63.82%,Moderate,2,0,2,Ineffective(Test Fails),The tests fail because the refactored code treats some numbers as text (STRING) when it shouldn't.,,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity",CyclomaticComplexity,,No,1,10,18,,39,10,18,,24,10,18,,24,12.82%,Minimal,2,2,0,Minimal,Did not alter default type.,,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,10,18,,39,4,3,,10,2.75,2.25,,7.75,72.56%,Moderate,2,0,2,Ineffective(Test Fails),"Extract method, SRP",,
+tablesaw,"getColumnType(int columnType, int scale, int precision)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,10,18,,39,4,3,,10,3,2.25,,8,72.56%,Moderate,2,0,2,Ineffective(Test Fails),"Extract method, SRP, missing edge case handling, default type change",,
+tablesaw,getDataTokens(Relation frame), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,11,24,,36,3,3,,14,2.43,2.33,,8,73.78%,Moderate,7,7,0,Moderate,"Extract method focused, standard Java.",,
+tablesaw,getDataTokens(Relation frame), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,11,24,,36,6,7,,19,3.2,3.4,,10,54.50%,Moderate,7,7,0,Moderate,"Extract method focused, standard Java.",,
+tablesaw,getDataTokens(Relation frame), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,24,,36,4,6,,11,2.67,3,,8.83,69.36%,Moderate,7,7,0,Moderate,"Extract method, SRP, standard Java.",,
+tablesaw,getDataTokens(Relation frame), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,,No,1,11,24,,36,9,19,,32,9,19,,32,16.71%,Minimal,7,7,0,Minimal,"Unified looping logic, reduced code duplication.",,
+tablesaw,getDataTokens(Relation frame), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,24,,36,3,3,,21,2.67,2.33,,9,67.30%,Moderate,7,6,1,Ineffective(Test Fails),"Extract method, SRP, calculation error.",,
+tablesaw,getDataTokens(Relation frame), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,24,,36,4,6,,15,4,6,,9.67,65.66%,Moderate,7,7,0,Moderate,"Extract method, SRP",,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,10,18,,60,4,5,,17,2.8,2,,9.4,67.96%,Moderate,2,2,0,Moderate,,,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,10,18,,60,5,6,,22,3.25,2.5,,10.25,60.00%,Moderate,2,2,0,Moderate,,,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,18,10,18,,60,6,7,,24,2,2.2,,6.67,53.70%,Moderate,2,,,Ineffective(Error or Untestable),Hallucinated methods/variables. Unit tests not run due to compilation error.,,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,2,10,18,,60,9,16,,28,5.5,8.5,,19,24.81%,Low,2,2,0,Low,,,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,10,18,,60,7,10,,23,2.8,3.25,,10.6,45.37%,Low,2,2,0,Low,"Extract method, separation of concerns, standard Java.",,
+tablesaw,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,1,10,18,,60,8,10,,27,8,10,,27,39.81%,Low,2,,,Ineffective(Error or Untestable),Hallucinated variable. Unit tests not run due to compilation error.,,
+tablesaw,splitOn(String... splitColumnNames), Llama 4 Maverick,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,6,,21,,56,,3,,17,,1.5,,9.67,77.68%,Moderate,10,10,0,Moderate,"Extract method (rather than multiple if statements), removed duplicated code, ",,
+tablesaw,splitOn(String... splitColumnNames), Llama 4 Maverick,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,,21,,56,,6,,17,,2.75,,13,70.54%,Moderate,10,10,0,Moderate,"Extract method (rather than multiple if statements), removed duplicated code, ",,
+tablesaw,splitOn(String... splitColumnNames), Gemini 2.0 Flash,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,4,,21,,56,,3,,16,,3,,16,78.57%,Moderate,10,9,1,Ineffective(Test Fails),"Removed duplication, extract method. Failed test due to incorrect assumptions about table content.",,
+tablesaw,splitOn(String... splitColumnNames), Gemini 2.0 Flash,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,3,,21,,56,,6,,21,,3.67,,21,66.96%,Moderate,10,10,0,Moderate,"Extract method, separation of concern, reduced code duplication.",,
+tablesaw,splitOn(String... splitColumnNames), R1 Distill Qwen 32B,HYBRID,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,5,,21,,56,,8,,27,,2.8,,27,56.85%,Moderate,10,10,0,Moderate,"Extract method, clear naming of methods, SRP, both added and reduced duplication added guard clause for empty input. Introduced runtime casting of objects.",,
+tablesaw,splitOn(String... splitColumnNames), R1 Distill Qwen 32B,LLM_ONLY,"CognitiveComplexity, ExcessiveLinesOfCode","CognitiveComplexity, ExcessiveLinesOfCode",,No,3,,21,,56,,6,,18,,3.67,,16.67,69.64%,Moderate,10,10,0,Moderate,"Extract method, SRP, removed duplication.",,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", Llama 4 Maverick,HYBRID,CognitiveComplexity,CognitiveComplexity,,No,4,,15,,23,,3,,17,,2.67,,9.75,53.04%,Moderate,3,3,0,Moderate,"Extract method, separation of concerns. Standard Java.",,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", Llama 4 Maverick,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,Yes,5,,15,,23,,3,,13,,1.75,,8.4,61.74%,Moderate,3,,,Ineffective(Error or Untestable),Introduced type mismatch. Using unresolved method. Does not compile. Unit tests not run due to compilation error.,,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", Gemini 2.0 Flash,HYBRID,CognitiveComplexity,CognitiveComplexity,,Yes,4,,15,,23,,3,,15,,1.75,,10.5,57.39%,Moderate,3,,,Ineffective(Error or Untestable),Introduced type mismatch. Attempting to pass mismatched variable to method. Unit tests not run due to compilation error.,,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", Gemini 2.0 Flash,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,Yes,3,,15,,23,,10,,25,,6,,12,12.32%,Minimal,3,,,Ineffective(Error or Untestable),Introduced type mismatch. Attempting to pass mismatched variable to method. Unit tests not run due to compilation error.,,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", R1 Distill Qwen 32B,HYBRID,CognitiveComplexity,CognitiveComplexity,,Yes,5,,15,,23,,3,,17,,1.75,,9.4,53.04%,Moderate,3,,,Ineffective(Error or Untestable),"Hallucinated method (from outside context). Extract method, SRP.",,
+tablesaw,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)", R1 Distill Qwen 32B,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,No,6,,15,,23,,3,,14,,2.67,,7.67,59.57%,Moderate,3,1,3,Ineffective(Test Fails),"Extract method, SRP. Wrote (test) results to a non-existing table column.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,6,10,,,29,3,,,12,2.17,,,6.67,64.31%,Moderate,9,9,0,Moderate,"Extract method, single responsibility, decomposed conditionals. Clarified method name.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,6,10,,,29,3,,,10,2.17,,,7.17,67.76%,Moderate,9,9,0,Moderate,"Extract method, single responsibility, decomposed conditionals. Clarified method name.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,5,10,,,29,5,,,12,2.4,,,7.8,54.31%,Moderate,9,9,0,Moderate,"Extracted method, SRP, separation of concerns. Imported TransformerConfigurationException for one of the new methods.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,10,,,29,10,,,23,10,,,23,10.34%,Minimal,9,9,0,Minimal,"Streamlined object creation (delayed until necessary), elimianted unneeded steps, enhanced control flow.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,29,7,,,17,4,,,12.33,35.69%,Low,9,9,0,Low,"Extract method, SRP.",,
+jsoup," String asString(Document doc, @Nullable Map<String, String> properties)", R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,29,7,,,17,4,,,12.33,35.69%,Low,9,9,0,Low,"Extract method, SRP.",,
+jsoup,hasClass(String className), Llama 4 Maverick,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CognitiveComplexity, CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,5,13,21,252,45,6,14,6,21,2.8,4,3.8,8.8,59.53%,Moderate,8,8,0,Moderate,"Extract method, single responsibility. Standard Java library.",,
+jsoup,hasClass(String className), Llama 4 Maverick,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,3,13,21,252,45,6,17,12,17,4,4.67,8.67,10.67,57.59%,Moderate,8,8,0,Moderate,"Extract method, single responsibility. Standard Java library. Improved logical flow. Avoids redundant String/Arraylist creation.",,
+jsoup,hasClass(String className), Gemini 2.0 Flash,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,13,21,252,45,6,15,12,21,3.5,5.25,6,11.25,57.75%,Moderate,8,8,0,Moderate,"Extract method, separation of cocnerns, code duplication reduction, descriptive method names.",,
+jsoup,hasClass(String className), Gemini 2.0 Flash,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CyclomaticComplexity, ExcessiveLinesOfCode","CognitiveComplexity, NPathComplexity",No,1,13,21,252,45,12,21,504,37,12,21,504,37,-18.63%,Negative,8,8,0,Ineffective(Increased complexity),"Removed redundant conditions, removed unnecessary checks, loop logic more compact",,
+jsoup,hasClass(String className), R1 Distill Qwen 32B,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,3,13,21,252,45,9,17,36,32,5.67,11,20.33,17,41.11%,Low,8,8,0,Low,"Extract method, SRP. Added null/empty checks for class name/attributes.",,
+jsoup,hasClass(String className), R1 Distill Qwen 32B,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode, NPathComplexity","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,1,13,21,252,45,4,3,6,10,4,3,6,10,82.59%,High,8,8,0,High,"The refactoring simplified the original method by replacing manual character iteration with String.split() and streams (.filter, .map, .anymatch).",,
+jsoup,List<Connection.KeyVal> formData(), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,5,15,32,265,38,4,7,5,17,3,3.8,3.8,9.6,76.21%,Moderate,7,7,0,Moderate,"Extract method, single responsibility. Imported Collections library.",,
+jsoup,List<Connection.KeyVal> formData(), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,6,15,32,265,38,4,5,5,10,2.67,3.17,3.5,7.33,82.38%,High,7,6,1,Ineffective(Test Fails),"The refactoring failed to check for and exclude null values returned by method, resulting in an incorrect form data list size (failing single test).",,
+jsoup,List<Connection.KeyVal> formData(), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,6,15,32,265,38,5,7,9,13,3,7,4,7.83,76.80%,Moderate,7,7,0,Moderate,"Reduced nesting, separated cocnerns, decomposed logic, extract method, SRP.",,
+jsoup,List<Connection.KeyVal> formData(), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,3,15,32,265,38,10,12,49,22,5.67,7,18.67,13.33,54.86%,Moderate,7,7,0,Moderate,Extract method but only more complex input types extracted to helper methods. Inline condition grouping.,,
+jsoup,List<Connection.KeyVal> formData(), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,7,15,32,265,38,6,9,13,17,1.71,3,3.29,5,70.56%,Moderate,7,7,0,Moderate,"Extract method, SRP.",,
+jsoup,List<Connection.KeyVal> formData(), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,6,15,32,265,38,6,6,12,13,3.33,3.33,6,9.67,75.63%,Moderate,7,7,0,Moderate,"Extract method, SRP.",,
+jsoup,int nextIndexOf(CharSequence seq), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,10,17,,17,4,4,,12,3.25,3.25,,9.75,55.29%,Moderate,2,2,0,Moderate,"Extract method, single responsibility. Standard Java library.",,
+jsoup,int nextIndexOf(CharSequence seq), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,3,10,17,,17,4,5,,14,3.67,3.67,,10.67,49.41%,Low,2,2,0,Low,"Extract method, single responsibility. Standard Java library.",,
+jsoup,int nextIndexOf(CharSequence seq), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,3,10,17,,17,4,5,,14,4,4,,10.33,49.41%,Low,2,2,0,Low,"Responsibilities extracted, simplified main loop (heavy nesting), separation of concerns.",,
+jsoup,int nextIndexOf(CharSequence seq), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,2,10,17,,17,5,7,,16,4,5,,12.5,38.24%,Low,2,2,0,Low,Replaced nested loop logic with a cleaner linear scan and extracted sequence matching into a helper method. Separation of concerns.,,
+jsoup,int nextIndexOf(CharSequence seq), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,10,17,,17,6,5,,20,3.5,4,,10.5,30.98%,Low,2,2,0,Low,"Extract method, SRP, clearly named new methods. Simplified intricate nesting.",,
+jsoup,int nextIndexOf(CharSequence seq), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,6,10,17,,17,4,3,,11,3.33,2.67,,9.33,59.22%,Moderate,2,2,0,Moderate,"Extract method, SRP, clearly named new methods. Simplified intricate nesting.",,
+jsoup,String escapeCssIdentifier(String in), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,4,11,16,,54,5,5,,10,3.67,3.33,,6.67,68.26%,Moderate,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values (refactoring added another \ to values). Removing two individual \'s allowed test to pass. Unit tests not run due to compilation error.,,
+jsoup,String escapeCssIdentifier(String in), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,4,11,16,,54,3,8,,12,2.5,5.5,,8.75,66.84%,Moderate,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values (refactoring added another \ to values). Removing two individual \'s allowed test to pass. Unit tests not run due to compilation error.,,
+jsoup,String escapeCssIdentifier(String in), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,4,11,16,,54,3,8,,12,2.5,5.5,,8.75,66.84%,Moderate,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values (refactoring added another \ to values). Removing two individual \'s allowed test to pass. Unit tests not run due to compilation error.,,
+jsoup,String escapeCssIdentifier(String in), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,1,11,16,,54,9,7,,30,9,7,,30,39.63%,Low,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values. Unit tests not run due to compilation error.,,
+jsoup,String escapeCssIdentifier(String in), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,5,11,16,,54,3,7,,18,2,4.5,,6.33,65.21%,Moderate,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values (refactoring added another \ to values). Removing two individual \'s allowed test to pass. Unit tests not run due to compilation error.,,
+jsoup,String escapeCssIdentifier(String in), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,Yes,3,11,16,,54,4,7,,17,2.67,4.5,,5,62.80%,Moderate,1,,,Ineffective(Error or Untestable),Compared character to string literals instead of the correct Unicode values (refactoring added another \ to values). Removing two individual \'s allowed test to pass. Unit tests not run due to compilation error.,,
+jsoup,"chompBalanced(char open, char close)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,7,20,33,238,42,7,12,18,29,3.57,6.25,5.14,8.57,63.01%,Moderate,6,4,2,Ineffective(Test Fails),Refactoring breaks correct tracking of quote contexts and regex escapes leading to incorrect parsing of strings with nested quotes or escaped characters,,
+jsoup,"chompBalanced(char open, char close)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,6,20,33,238,42,6,11,14,29,3.33,5,5.67,9.5,65.43%,Moderate,6,,,Ineffective(Error or Untestable),Hallucinated a return value. Unit tests not run due to compilation error.,,
+jsoup,"chompBalanced(char open, char close)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,3,20,33,238,42,11,9,80,43,3.66,3,26.66,14.33,45.43%,Low,6,,,Ineffective(Error or Untestable),Hallucinated method. Used too many characters in char literal. Unclosed character literal. Unit tests not run due to compilation error.,,
+jsoup,"chompBalanced(char open, char close)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",,Yes,1,20,33,238,42,10,8,48,43,10,8,48,43,50.80%,Moderate,6,,,Ineffective(Error or Untestable),Unclosed character literal. Unit tests not run due to compilation error.,,
+jsoup,"chompBalanced(char open, char close)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,5,20,33,238,42,11,18,11,27,4.8,8.67,5.2,13,55.39%,Moderate,6,,,Ineffective(Error or Untestable),Hallucinated method of another class (out of context). Unit tests not run due to compilation error.,,
+jsoup,"chompBalanced(char open, char close)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,4,20,33,238,42,8,17,14,34,4.5,6.5,6.5,13.5,55.41%,Moderate,6,,,Ineffective(Error or Untestable),Hallucinated variable. Unit tests not run due to compilation error.,,
+jsoup,String consumeCssIdentifier(), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,12,16,,41,6,6,,15,3.75,4.33,,4.33,58.64%,Moderate,3,2,1,Ineffective(Test Fails),Removed a break causing infinite loop in one test.,,
+jsoup,String consumeCssIdentifier(), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,2,12,16,,41,7,8,,21,6.5,8,,18,46.82%,Low,3,2,0,Low,"Extract method focused, SRP.  Preserved behavior of original break.",,
+jsoup,String consumeCssIdentifier(), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,4,12,16,,41,5,6,,17,3.5,3.25,,10.75,59.79%,Moderate,3,2,1,Ineffective(Test Fails),Removed a break causing infinite loop in one test.,,
+jsoup,String consumeCssIdentifier(), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,1,12,16,,41,9,13,,26,9,13,,26,26.78%,Low,3,2,0,Low,"Refactoring simplified the method by removing special-case handling and consolidating logic into a single, consistent processing flow.",,
+jsoup,String consumeCssIdentifier(), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,3,12,16,,41,6,9,,22,5,5.33,,16.33,46.70%,Low,3,2,0,Low,"Extract method focused, SRP. ",,
+jsoup,String consumeCssIdentifier(), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity","CyclomaticComplexity, CognitiveComplexity",,No,7,12,16,,41,6,7,,25,2.57,2.6,,7.71,48.42%,Low,3,1,2,Ineffective(Test Fails),"Extract method, SRP. Fails tests because it only checks the last character of the initially consumed identifier to decide if further parsing is needed. This misses escape sequences that appear after the initial segment, leading to incorrect parsing",,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,13,15,,37,4,4,,12,2.67,2.17,,8.17,70.04%,Moderate,2,2,0,Moderate,"Extract method focused, SRP.  Clearer naming.",,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,13,15,,37,6,6,,12,3,2.4,,7.8,60.47%,Moderate,2,2,0,Moderate,"Extract method focused, SRP.  Clearer naming.",,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,13,15,,37,4,9,,11,3.25,2.25,,8,59.83%,Moderate,2,2,0,Moderate,"Extract method, SRP, isolated error handling.",,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,1,13,15,,37,7,11,,31,7,11,,31,29.68%,Low,2,,,Ineffective(Error or Untestable),Incorrect character literals. Used escaped character literals instead of the actual control characters. Unit tests not run due to compilation error.,,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,3,13,15,,37,6,9,,19,5.5,9.25,,8,47.50%,Low,2,,,Ineffective(Error or Untestable),Incorrect character literals. Used escaped character literals instead of the actual control characters. Unit tests not run due to compilation error.,,
+jsoup,void consumeCssEscapeSequenceInto(StringBuilder out), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,Yes,5,13,15,,37,5,6,,23,2.6,11,,9,53.13%,Moderate,2,,,Ineffective(Error or Untestable),Incorrect character literals. Used escaped character literals instead of the actual control characters. Unit tests not run due to compilation error.,,
+openmrs-core,String getModifyString(Database database), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,17,4,,,,2,,,,60.00%,Moderate,1,1,0,Moderate,"Code refactoring extraction
+",,
+openmrs-core,String getModifyString(Database database), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,17,4,,,,2,,,,60.00%,Moderate,1,1,0,Moderate,"Code refactoring extraction
+",,
+openmrs-core,String getModifyString(Database database), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,17,4,,,,2,,,,60.00%,Moderate,1,1,0,Moderate,"Code refactoring extraction
+",,
+openmrs-core,String getModifyString(Database database), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,,CyclomaticComplexity,Yes,1,10,,,17,10,,,,10,,,,0.00%,None,1,,,Ineffective(Error or Untestable),Incompatible types in switch statement ,,
+openmrs-core,String getModifyString(Database database), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,17,4,,,,2,,,,60.00%,Moderate,1,1,0,Moderate,Code refactoring extraction,,
+openmrs-core,String getModifyString(Database database), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,,CyclomaticComplexity,No,1,10,,,17,10,,,,10,,,,0.00%,None,1,1,0,Ineffective(no change),,,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,12,17,,37,5,5,,12,2.8,2.6,,7.4,65.50%,Moderate,4,4,0,Moderate,"Logic abstraction
+Single responsibility principle",,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,12,17,,37,4,4,,9,2.4,2,,7,72.94%,Moderate,4,4,0,Moderate,"Logic abstraction
+Single responsibility principle",,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,12,17,,37,4,4,,19,3,2.67,,12,63.93%,Moderate,4,4,0,Moderate,"Uses Java Streams API
+Single responsibility principle",,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,12,17,,37,6,8,,21,5,6.33,,13.67,48.73%,Low,4,4,0,Low,duplicating iteration logic across methods,,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode",Yes,5,12,17,,37,,,,,,,,,#N/A,#N/A,4,,,Ineffective(Error or Untestable),Syntax error: illegal escape characters in strings,,
+openmrs-core,"public ConceptName getShortestName(Locale locale, Boolean exact)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",No,1,12,17,,37,12,16,,33,12,16,,33,5.56%,Minimal,4,4,0,Minimal,,,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,3,12,,384,31,9,,,20,4.67,,,10.67,30.24%,Low,9,9,0,Low,"Switch statement usage
+error handling isolation
+Single responsibility principle",,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","NPathComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,No,1,12,,384,31,12,,10,25,12,,10,25,38.92%,Low,9,8,1,Ineffective(Test Fails),"Switch statement usage
+
+",,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",ExcessiveLinesOfCode,"CyclomaticComplexity, NPathComplexity",No,9,12,,384,31,10,,256,27,2.22,,29.44,6,20.97%,Low,9,2,7,Ineffective(Test Fails),"Single responsibility principle
+Infinite recursion in helper methods
+Duplication
+missing null checks",,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,1,12,,384,31,8,,6,24,8,,6,24,51.45%,Moderate,9,9,0,Moderate,"Eliminates repetitive if statements and reduces code duplication
+map creation overhead on each method call ",,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","NPathComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,No,2,12,,384,31,10,,9,22,6.5,,5.5,14,47.79%,Low,9,9,0,Low,"Switch statement usage
+Single responsibility principle",,
+openmrs-core,"Date addToDate(Date startDate, OrderFrequency frequency)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","NPathComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,No,1,12,,384,31,12,,10,25,12,,10,25,38.92%,Low,9,9,0,Low,"Switch statement usage
+",,
+openmrs-core,void addObs(Obs observation), Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,10,20,,48,4,5,,16,3,2.75,,10,67.22%,Moderate,6,6,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+",,
+openmrs-core,void addObs(Obs observation), Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,10,20,,48,5,5,,17,4,3.67,,12.67,63.19%,Moderate,6,6,0,Moderate,"Early return pattern 
+Single responsibility principle
+Code refactoring extraction
+",,
+openmrs-core,void addObs(Obs observation), R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,10,20,,48,4,4,,15,2.8,2,,8.8,69.58%,Moderate,6,6,0,Moderate,"Early return pattern 
+Single responsibility principle
+Code refactoring extraction
+increased memory usage(ArrayDeque, HashSet)",,
+openmrs-core,void addObs(Obs observation), R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,10,20,,48,4,4,,15,2.8,2,,8.8,69.58%,Moderate,6,6,0,Moderate,"Early return pattern 
+Single responsibility principle
+Code refactoring extraction
+increased memory usage(ArrayDeque, HashSet)",,
+openmrs-core,void addObs(Obs observation), Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,10,20,,48,7,6,,17,2.4,2.25,,8.2,54.86%,Moderate,6,6,0,Moderate,"functional approach with getter/setter abstraction
+Single responsibility principle
+Code refactoring extraction
+",,
+openmrs-core,void addObs(Obs observation), Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",CognitiveComplexity,"CyclomaticComplexity, ExcessiveLinesOfCode",No,1,10,20,,48,10,14,,34,10,14,,38,19.72%,Minimal,6,6,0,Minimal,"Early return pattern 
+increased memory usage(ArrayDeque, HashSet)",,
+openmrs-core,boolean isExpired(Date aCheckDate), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,6,10,,,17,5,,,,2.33,,,,50.00%,Moderate,9,9,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+reduced duplication
+",,
+openmrs-core,boolean isExpired(Date aCheckDate), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,5,10,,,17,5,,,,2.2,,,,50.00%,Moderate,9,5,4,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+Logic error in return statement, using AND instead of OR)",,
+openmrs-core,boolean isExpired(Date aCheckDate), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,6,10,,,17,5,,,,2.17,,,,50.00%,Moderate,9,9,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+Redundancy
+",,
+openmrs-core,boolean isExpired(Date aCheckDate), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,10,,,17,7,,,,7,,,,30.00%,Low,9,9,0,Low,"multiple responsibilities
+No method call overhead ",,
+openmrs-core,boolean isExpired(Date aCheckDate), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,17,7,,,,3.25,,,,30.00%,Low,9,9,0,Low,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,boolean isExpired(Date aCheckDate), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,1,10,,,17,9,,,,9,,,,10.00%,Minimal,9,9,0,Minimal,"multiple responsibilities
+No method call overhead 
+Some duplication with null check ",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), Llama 4 Maverick,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,8,11,19,,33,5,6,,12,2.13,2.33,,12,62.20%,Moderate,7,6,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), Llama 4 Maverick,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,19,,33,5,6,,12,2.17,2.5,,6.33,62.20%,Moderate,7,6,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), R1 Distill Qwen 32B,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode, CognitiveComplexity",,No,6,11,19,,33,6,7,,15,2.5,4.33,,6.67,54.39%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), R1 Distill Qwen 32B,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,6,11,19,,33,6,8,,19,2.67,4,,7.33,48.59%,Low,7,6,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+some suplciation between null checks",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), Gemini 2.0 Flash,HYBRID,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,4,11,19,,33,7,7,,20,3.25,4.33,,9.25,46.31%,Low,7,7,0,Low,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,void addAttribute(PersonAttribute newAttribute), Gemini 2.0 Flash,LLM_ONLY,"CognitiveComplexity, CyclomaticComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,"CognitiveComplexity, ExcessiveLinesOfCode",No,1,11,19,,33,9,18,,32,9,18,,32,8.83%,Minimal,7,6,1,Ineffective(Test Fails),logic is tightly coupled,,
+openmrs-core,PersonName getPersonName(), Llama 4 Maverick,HYBRID,CognitiveComplexity,CognitiveComplexity,,No,1,,15,,21,,6,,,,6,,,60.00%,Moderate,6,6,0,Moderate,Single responsibility principle,,
+openmrs-core,PersonName getPersonName(), Llama 4 Maverick,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,No,1,,15,,21,,4,,,,4,,,73.33%,Moderate,6,6,0,Moderate,"Uses stream API
+Concise solution",,
+openmrs-core,PersonName getPersonName(), R1 Distill Qwen 32B,HYBRID,CognitiveComplexity,CognitiveComplexity,,Yes,1,,15,,21,,8,,,,8,,,46.67%,Low,6,,,Ineffective(Error or Untestable),"Uses stream API
+Uses a method thata doesn't exist",,
+openmrs-core,PersonName getPersonName(), R1 Distill Qwen 32B,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,Yes,1,,15,,21,,6,,,,6,,,60.00%,Moderate,6,,,Ineffective(Error or Untestable),"Uses a method that doesn't exist
+Optional not properly handled ",,
+openmrs-core,PersonName getPersonName(), Gemini 2.0 Flash,HYBRID,CognitiveComplexity,CognitiveComplexity,,No,1,,15,,21,,6,,,,6,,,60.00%,Moderate,6,6,0,Moderate,Uses stream API,,
+openmrs-core,PersonName getPersonName(), Gemini 2.0 Flash,LLM_ONLY,CognitiveComplexity,CognitiveComplexity,,No,1,,15,,21,,6,,,,6,,,60.00%,Moderate,6,6,0,Moderate,Uses stream API,,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,5,12,,1152,36,6,,32,23,3.2,,9.2,11.4,61.11%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,4,12,,1152,36,1,,3,14,1,,1.75,7.75,84.17%,High,10,,,Ineffective(Error or Untestable),"The refactored code is more elegant and functional, but it introduces type safety issues.",,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",No,11,12,,1152,36,10,,512,31,2,,47.64,6.09,28.70%,Low,10,10,0,Low,"Single responsibility principle
+Code refactoring extraction
+Stream API
+",,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,ExcessiveLinesOfCode,No,2,12,,1152,36,8,,64,31,4.5,,27.5,17,47.22%,Low,10,10,0,Low,"Functional appraoch
+",,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,5,12,,1152,36,6,,32,19,3.2,,9.2,11.2,64.81%,Moderate,10,10,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"int compare(PersonName pn1, PersonName pn2) ", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",,"CyclomaticComplexity, NPathComplexity, ExcessiveLinesOfCode",No,1,12,,1152,36,12,,1536,35,12,,1536,35,-10.19%,Negative,10,10,0,Ineffective(Increased complexity),,,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,41,3,,,11,3.33,,,9.67,71.59%,Moderate,3,3,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,4,10,,,41,5,,,13,2.5,,,9,59.15%,Moderate,3,3,0,Moderate,"clean exception handling
+proper abstraction
+Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,Yes,4,10,,,41,7,,,14,3.25,,,9.5,47.93%,Low,3,,,Ineffective(Error or Untestable),"Single responsibility principle
+Code refactoring extraction
+parameter type mismatch
+type safety issues",,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode",CyclomaticComplexity,,No,3,10,,,41,7,,,13,4,,,10.67,49.15%,Low,3,3,0,Low,"added finally block for proper cleanup
+Single responsibility principle
+Code refactoring extraction
+",,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, ExcessiveLinesOfCode",,No,3,10,,,41,7,,,15,4,,,11,46.71%,Low,3,3,0,Low,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, ExcessiveLinesOfCode",,CyclomaticComplexity,No,1,10,,,41,10,,,25,10,,,25,19.51%,Minimal,3,3,0,Minimal,"Exception handling logic mixes concerns
+",,
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), Llama 4 Maverick,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,23,3,,,,2,,,,70.00%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+better null handling",,
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), Llama 4 Maverick,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,23,4,,,,2,,,,60.00%,Moderate,7,7,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+",,
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), R1 Distill Qwen 32B,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,23,9,,,,4.33,,,,10.00%,Minimal,7,6,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+Redundant null check
+",,2
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), R1 Distill Qwen 32B,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,3,10,,,23,9,,,,4,,,,10.00%,Minimal,7,7,0,Minimal,"Removed redudant null check
+Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), Gemini 2.0 Flash,LLM_ONLY,CyclomaticComplexity,CyclomaticComplexity,,No,4,10,,,23,7,,,,2.75,,,,30.00%,Low,7,7,0,Low,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier), Gemini 2.0 Flash,HYBRID,CyclomaticComplexity,CyclomaticComplexity,,No,2,10,,,23,8,,,,5,,,,20.00%,Low,7,7,0,Low,A method contains a more complex boolean expression,,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,12,17,,53,3,4,,11,2.29,1.83,,7,76.91%,Moderate,14,14,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,12,17,,53,4,4,,10,2.43,2,,7.29,74.76%,Moderate,14,14,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,7,12,17,,53,5,4,,12,2.57,3,,7.29,70.72%,Moderate,14,6,8,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,12,17,,53,7,11,,20,4.64,9,,12.33,46.41%,Low,14,14,0,Low,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,5,12,17,,53,7,7,,11,3.6,4.25,,9.2,59.91%,Moderate,14,14,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"Allergies setAllergies(Patient patient, Allergies allergies)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode",,No,3,12,17,,53,7,7,,15,4.67,5,,12.33,57.40%,Moderate,14,14,0,Moderate,"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,20,21,1600,78,7,4,9,18,3.38,2.5,4,9.63,80.58%,High,6,6,0,High,"Single responsibility principle
+Code refactoring extraction
+improved flow control ",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,6,20,21,1600,78,7,5,18,16,4.17,2.67,6,11.5,79.89%,Moderate,6,6,0,Moderate,"Single responsibility principle
+Code refactoring extraction
+improved flow control 
+improved null handling",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,10,20,21,1600,78,3,3,4,15,2.5,1.56,2.2,8.3,87.81%,High,6,5,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+improved error handling",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,9,20,21,1600,78,8,9,19,18,3.11,2.57,3.78,9,73.22%,Moderate,6,,,Ineffective(Error or Untestable),"missing refernces adn parameters
+parameter duplication across different methods",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,20,21,1600,78,6,5,18,18,3.38,1.88,4.38,10.63,80.50%,High,6,6,0,High,"Single responsibility principle
+Code refactoring extraction
+improved error handling",,
+openmrs-core,"void processNK1(Patient patient, NK1 nk1)", Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","NPathComplexity, CognitiveComplexity","CyclomaticComplexity, ExcessiveLinesOfCode",No,3,20,21,1600,78,13,8,96,38,7.33,5.33,39,21.33,60.55%,Moderate,6,6,0,Moderate,"Uses regex instead of pattern
+fewer methods but long main method",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, Llama 4 Maverick,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,9,28,37,30720,121,9,7,20,26,3.89,3.25,6.56,12.22,81.85%,High,6,5,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+better null checking
+better error handling",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, Llama 4 Maverick,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,10,28,37,30720,121,8,7,36,30,3.8,2.7,6.3,11.8,81.90%,High,6,6,0,High,"Clear data flow and explicit validation steps
+the state changes are more visible",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, R1 Distill Qwen 32B,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,Yes,11,28,37,30720,121,9,11,39,33,3.55,3,7,11.37,77.68%,Moderate,6,,,Ineffective(Error or Untestable),"Single responsibility principle
+Code refactoring extraction
+Multiple unhandled exceptions in the extracted methods, adding the exception handling resolved the compliation error and all tests passed ",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, R1 Distill Qwen 32B,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",ExcessiveLinesOfCode,Yes,7,28,37,30720,121,13,18,80,33,6.29,5.71,17.86,19.86,69.35%,Moderate,6,,,Ineffective(Error or Untestable),"Multiple unhandled exceptions in the extracted methods
+Incorrect method argument",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, Gemini 2.0 Flash,HYBRID,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",ExcessiveLinesOfCode,No,10,28,37,30720,121,9,12,20,33,3.8,3.88,5.3,11.7,77.02%,Moderate,6,5,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction",,
+openmrs-core,Person createPersonFromNK1(NK1 nk1) throws HL7Exception, Gemini 2.0 Flash,LLM_ONLY,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode","CyclomaticComplexity, CognitiveComplexity, NPathComplexity, ExcessiveLinesOfCode",,No,8,28,37,30720,121,9,8,20,27,4.38,3.86,7,13.63,80.96%,High,6,5,1,Ineffective(Test Fails),"Single responsibility principle
+Code refactoring extraction
+Mutaion of parameters ",,

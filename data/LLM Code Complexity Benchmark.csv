@@ -1,0 +1,335 @@
+Project ,GitHub Repo Link,Build & Test Setup,Class ,Method ,Comlexity Issues,Test Class,Tests Verifying Behavior,of Tests Verifying Behavior,Notes,,
+cobertura,https://github.com/cobertura/cobertura,"- Java 8 SDK
+- Maven
+- JUnit 4",net.sourceforge.cobertura.util.CommandLineBuilder,preprocessCommandLineArguments(String[] args),"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","net.sourceforge.cobertura.util
+CommandLineBuilderTest","-testArguments(String[])
+-testExample()
+-testExample_2()
+-testInvalidArguments()
+-testCommandsFileOption()",5,,,
+,,,net.sourceforge.cobertura.coveragedata.LineData,merge(CoverageData coverageData),"CyclomaticComplexity, CognitiveComplexity, ExcessiveLinesOfCode","net.sourceforge.cobertura.merge
+MergeTest","-testMergePackages()
+-testMergeDifferentClassData()
+-testMergeSimillarClassData()
+-testMergeDifferentLineNumbers()
+-testMergeSimillarLineNumbers()
+-testMergeBranches()
+-testMergeSourceFiles()",7,,,
+strimzi/strimzi-kafka-operator,https://github.com/strimzi/strimzi-kafka-operator,"- Java 22
+- Maven
+- JUnit 5",io.strimzi.operator.topic.TopicOperatorConfig,adminClientConfig(),"CyclomaticComplexity, CognitiveComplexity, NPathComplexity","io.strimzi.operator.topic
+ConfigTest","-shouldConnectWithPlaintextAndNotAuthn()
+-shouldConnectWithTls()
+-shouldConnectWithSaslPlain()
+-shouldConnectWithSaslPlainWithTls()
+-shouldAcceptSaslScramSha256()
+-shouldAcceptSaslScramSha512()
+-shouldRejectInvalidSaslMechanism()
+-shouldThrowIfSecurityProtocolInconsistentWithTls()
+-shouldThrowIfSaslButNotCredentials()
+-shouldThrowIfTrustStorePasswordButNoLocation()
+-shouldThrowIfKeyStorePasswordButNoLocation()
+-shouldConfigureCustomSasl()
+-shouldThrowIfCustomConfigPropertyEmpty()
+-shouldThrowIfCustomConfigInvalid()
+-shouldThrowIfCustomConfigHasNonSaslProperties()
+-shouldThrowIfCustomConfigHasEmptyProperties()",16,,,
+,,,io.strimzi.operator.topic.TopicOperatorConfig,"setCustomSaslConfigs(Map<String, Object> kafkaClientProps)",CyclomaticComplexity,"io.strimzi.operator.topic
+ConfigTest","shouldConfigureCustomSasl()
+shouldThrowIfCustomConfigPropertyEmpty()
+shouldThrowIfCustomConfigInvalid()
+shouldThrowIfCustomConfigHasNonSaslProperties()
+shouldThrowIfCustomConfigHasEmptyProperties()",5,The method is tested indirectly through the adminClientConfig() method in ConfigTest.java,,
+,,,io.strimzi.operator.cluster.model.logging.LoggingUtils,validateLogging(Logging logging),CyclomaticComplexity, io.strimzi.operator.cluster.model.logging.LoggingUtilsTest,testLoggingValidation(),1,,,
+,,,io.strimzi.operator.cluster.model.logging.LoggingUtils,"String loggingConfiguration(Reconciliation reconciliation, LoggingModel logging, ConfigMap externalCm)","CyclomaticComplexity, CognitiveComplexity", io.strimzi.operator.cluster.model.logging.LoggingUtilsTest,"testDefaultLogConfig()
+testLog4j1InlineLoggingConfiguration()
+testLog4j2InlineLoggingConfiguration()
+testLog4j1ExternalLoggingConfiguration()
+testLog4j2ExternalLoggingConfiguration()
+testCreateLog4jProperties()
+testDefaultLogConfigWithNonExistentFile()
+testNullLog4j1LoggingConfiguration()
+testNullLog4j2LoggingConfiguration()",9,,,
+,,,io.strimzi.operator.cluster.model.metrics.MetricsModel,"String metricsJson(Reconciliation reconciliation, ConfigMap configMap)","CognitiveComplexity, ExcessiveLinesOfCode",io.strimzi.operator.cluster.model.metrics.MetricsModelTest,"-testProblemWithConfigMap()
+- testMetrics()",2,,,
+,,, io.strimzi.operator.cluster.model.CertUtils,"Secret buildTrustedCertificateSecret(Reconciliation reconciliation, ClusterCa clusterCa, Secret secret, String namespace,
+                                                       String secretName, String commonName, String keyCertName,
+                                                       Labels labels, OwnerReference ownerReference, boolean isMaintenanceTimeWindowsSatisfied) ",CyclomaticComplexity,io.strimzi.operator.cluster.operator.assembly.CertificateRenewalTest,"-testRenewalOfDeploymentCertificatesWithNullSecret()
+-testRenewalOfDeploymentCertificatesWithRenewingCa()
+-testRenewalOfDeploymentCertificatesDelayedRenewal()
+-testRenewalOfDeploymentCertificatesDelayedRenewalOutsideOfMaintenanceWindow()
+-testHandlingOldSecretWithPKCS12Files()",5,,,
+,,,io.strimzi.operator.cluster.model.ContainerUtils,"void addContainerEnvsToExistingEnvs(Reconciliation reconciliation, List<EnvVar> existingEnvs, ContainerTemplate template)",CyclomaticComplexity,io.strimzi.operator.cluster.model.ContainerUtilsTest,"-testAddContainerToEnvVarsWithNullTemplate()
+-testAddContainerToEnvVarsWithEmptyTemplate()
+-testAddContainerToEnvVarsWithoutValue()
+-testAddContainerToEnvVarsWithTemplate()
+-testAddContainerToEnvVarsWithConflict()",5,,,
+,,,io.strimzi.operator.cluster.model.EntityUserOperator,"EntityUserOperator fromCrd(Reconciliation reconciliation,
+                                             Kafka kafkaAssembly,
+                                             SharedEnvironmentProvider sharedEnvironmentProvider,
+                                             ClusterOperatorConfig config)","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",io.strimzi.operator.cluster.model.EntityUserOperatorTest,"-testFromCrd()
+-testFromCrdDefault()
+-testFromCrdNoEntityOperator()
+-testFromCrdNoUserOperatorInEntityOperator()
+-testFromCrdCaValidityAndRenewal()
+-testPeriodicReconciliationIntervalConfig()
+-testAclsAdminApiSupported()
+-testMaintenanceTimeWindows()
+-testWatchedNamespace()
+-testNoWatchedNamespace()",10,,,
+,,,io.strimzi.operator.cluster.model.KafkaBridgeConfigurationBuilder,KafkaBridgeConfigurationBuilder withAuthentication(KafkaClientAuthentication authentication),"CyclomaticComplexity, CognitiveComplexity, NPathComplexity",io.strimzi.operator.cluster.model.KafkaBridgeConfigurationBuilderTest,"-testTls()
+-testSaslMechanism() ",2,,,
+,,,io.strimzi.operator.cluster.model.KafkaBrokerConfigurationBuilder,"Map<String, String> getOAuthOptions(KafkaListenerAuthenticationOAuth oauth)","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",io.strimzi.operator.cluster.model.KafkaBrokerConfigurationBuilderTest,"- testOAuthOptions()
+-testOAuthDefaultOptions() ",2,,,
+,,,io.strimzi.operator.cluster.model.KafkaBrokerConfigurationBuilder,"KafkaBrokerConfigurationBuilder withUserConfiguration(KafkaConfiguration userConfig, boolean injectCcMetricsReporter)",CognitiveComplexity,io.strimzi.operator.cluster.model.KafkaBrokerConfigurationBuilderTest,"-testNullUserConfiguration()
+-testNullUserConfigurationAndCCReporter()
+-testEmptyUserConfiguration()
+-testUserConfiguration()
+-testUserConfigurationWithConfigProviders()
+-testUserConfigurationWithCCMetricsReporter()
+-testUserConfigurationWithCCMetricsReporterAndOtherMetricReporters()",7,,,
+,,,io.strimzi.operator.cluster.model.KafkaConnectBuild,"KafkaConnectBuild fromCrd(Reconciliation reconciliation,
+                                            KafkaConnect kafkaConnect,
+                                            KafkaVersion.Lookup versions,
+                                            SharedEnvironmentProvider sharedEnvironmentProvider)","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",io.strimzi.operator.cluster.operator.assembly.KafkaConnectBuildAssemblyOperatorOpenShiftTest,"-testBuildOnOpenShift(VertxTestContext)
+-testUpdateWithPluginChangeOnOpenShift(VertxTestContext)
+-testUpdateWithBuildImageChangeOnOpenShift(VertxTestContext)
+-testUpdateWithoutRebuildOnOpenShift(VertxTestContext)
+-testUpdateWithForcedRebuildOnOpenShift(VertxTestContext)
+-testContinueWithPreviousBuildOnOpenShift(VertxTestContext)
+-testRestartPreviousBuildOnOpenShift(VertxTestContext)
+-testRestartPreviousBuildDueToFailureOnOpenShift(VertxTestContext)
+",8,,,
+,,,io.strimzi.operator.cluster.model.Quantities,long parseMemory(String memory),CyclomaticComplexity,io.strimzi.operator.cluster.model.QuantitiesTest,testParseMemory(),1,,,
+,,,io.strimzi.operator.cluster.model.WorkloadUtils,"Deployment createDeployment(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            DeploymentTemplate template,
+            int replicas,
+            Map<String, String> annotations,
+            DeploymentStrategy updateStrategy,
+            PodTemplateSpec podTemplateSpec
+    )","NPathComplexity, CyclomaticComplexity",io.strimzi.operator.cluster.model.WorkloadUtilsTest,"-testCreateStatefulPodWithNullValues()
+-testCreateStatefulPodWithNullValuesAndNullTemplate()
+-testCreateStatefulPodWithEmptyTemplate()
+-testCreateStatefulPodWithTemplate()",4,,,
+,,,io.strimzi.operator.cluster.model.WorkloadUtils,"public static Pod createPod(
+            String name,
+            String namespace,
+            Labels labels,
+            OwnerReference ownerReference,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    )","CyclomaticComplexity, NPathComplexity",io.strimzi.operator.cluster.model.WorkloadUtilsTest,"testCreatePodWithNullValues()
+testCreatePodWithNullValuesAndNullTemplate()
+testCreatePodWithEmptyTemplate()
+testCreatePodWithTemplate()",4,,,
+,,,io.strimzi.operator.cluster.model.WorkloadUtils,"PodTemplateSpec createPodTemplateSpec(
+            String workloadName,
+            Labels labels,
+            PodTemplate template,
+            Map<String, String> defaultPodLabels,
+            Map<String, String> podAnnotations,
+            Affinity affinity,
+            List<Container> initContainers,
+            List<Container> containers,
+            List<Volume> volumes,
+            List<LocalObjectReference> defaultImagePullSecrets,
+            PodSecurityContext podSecurityContext
+    ) ","CyclomaticComplexity, NPathComplexity",io.strimzi.operator.cluster.model.WorkloadUtilsTest,"-testCreatePodTemplateSpecWithNullValues()
+-testCreatePodTemplateSpecWithNullTemplate()
+-testCreatePodTemplateSpecWithEmptyTemplate()
+-testCreatePodTemplateSpecWithTemplate()",4,,,
+tablesaw,https://github.com/jtablesaw/tablesaw,"JDK 11
+Maven
+JUnit 5",tech.tablesaw.aggregate.CrossTab,"counts(Table table, CategoricalColumn<?> column1, CategoricalColumn<?> column2)",CognitiveComplexity,tech.tablesaw.aggregate.CrossTabTest,"testCounts1()
+testCounts2()
+testCounts3()",3,,,
+,,,tech.tablesaw.analytic.WindowFrame,windowGrowthType(),CyclomaticComplexity,tech.tablesaw.analytic.WindowFrameTest,"windowGrowthTypeUnbounded()
+windowGrowthTypeFixedStart()
+windowGrothTypeFixedEnd()
+windowGrowthTypeSliding()
+windowGrowthTypeSlidingWithCurrentRow()",5,,,
+,,,tech.tablesaw.api.Table,cast(),"CyclomaticComplexity, CognitiveComplexity",tech.tablesaw.api.TableTest,"castWithDropMissing()
+cast()",2,,,
+,,,tech.tablesaw.columns.dates.PackedLocalDate,getQuarter(int packedDate),CyclomaticComplexity,tech.tablesaw.columns.dates.PackedLocalDateTest,testQuarters(),1,,,
+,,,tech.tablesaw.conversion.smile.SmileConverter,toSmileType(ColumnType type),CyclomaticComplexity,tech.tablesaw.conversion.smile.SmileConverterTest,allColumnTypes(),1,,,
+,,,tech.tablesaw.io.jdbc.SqlResultSetReader,"getColumnType(int columnType, int scale, int precision)
+
+","CyclomaticComplexity, CognitiveComplexity",tech.tablesaw.io.jdbc.SqlResultSetReaderTest,"invalidPrecision()
+testSqlResultSetReader()",2,,,
+,,,tech.tablesaw.io.string.DataFramePrinter,getDataTokens(Relation frame),"CyclomaticComplexity, CognitiveComplexity",tech.tablesaw.io.string.DataFramePrinterTest,"printNull()
+printOneRow()
+printWithExponent()
+printWithLargeDoubleNumber()
+printWithLargeFloatNumber()
+printWithSmallDoubleNumber()
+printWithSmallFloatNumber()",7,Tested indirectly.,,
+,,,tech.tablesaw.io.ColumnTypeDetector,"detectColumnTypes(Iterator<String[]> rows, ReadOptions options)","CognitiveComplexity, ExcessiveLinesOfCode, CyclomaticComplexity",tech.tablesaw.io.ColumnTypeDetectorTest,"detectColumnTypes()
+errorMsg()",2,,,
+,,,tech.tablesaw.table.StandardTableSliceGroup,splitOn(String... splitColumnNames),CognitiveComplexity,"tech.tablesaw.table.TableSliceTest
+tech.tablesaw.table.TableSliceGroupTest","structure()
+sliceAsTableUsingDatesAfterFilteringDBLoadedTable()
+etc.",11,Tested indirectly.,,
+,,,tech.tablesaw.table.TableSliceGroup,"aggregate(ListMultimap<String, AggregateFunction<?, ?>> functions)",CognitiveComplexity,tech.tablesaw.table.TableSliceGroupTest,"aggregate()
+aggregateWithEmptyResult()
+aggregateWithMultipleColumns()
+testCustomFunction()",3,,,
+jhy/jsoup,https://github.com/jhy/jsoup,"Java 8 (minimum)
+Maven
+JUnit 5
+",org.jsoup.helper.W3CDom," String asString(Document doc, @Nullable Map<String, String> properties)",CyclomaticComplexity,org.jsoup.helper.W3CDomTest,"simpleConversion()
+handlesInvalidAttributeNames()
+htmlInputDocMaintainsHtmlAttributeNames()
+xmlInputDocMaintainsHtmlAttributeNames()
+handlesInvalidTagAsText()
+canConvertToCustomDocument()
+output(String, boolean)
+canOutputHtmlWithoutNamespace()
+doesNotExpandEntities(Parser)",9,,,
+,,,org.jsoup.nodes.Element,hasClass(String className),"CyclomaticComplexity, CognitiveComplexity, NPathComplexity","org.jsoup.select.CssTest
+org.jsoup.select.ElementsTest
+org.jsoup.nodes.LeafNodeTest
+org.jsoup.nodes..NodeTest","supportsClone()
+doesNotGetAttributesTooEasily()
+whiteSpaceClassElement()
+classNamesAndAttributeNameIsCaseInsensitive()
+testHasClassDomMethods()
+testClassDomMethods()
+hasClassCaseInsensitive()
+onlyOfType()",8,,,
+,,,org.jsoup.nodes.FormElement,List<Connection.KeyVal> formData(),"NPathComplexity, CognitiveComplexity, CyclomaticComplexity",org.jsoup.nodes.FormElementTest,"usesOnForCheckboxValueIfNoValueSet()
+createsFormData()
+formDataUsesFirstAttribute()
+controlsAddedAfterParseAreLinkedWithForms()
+adoptedFormsRetainInputs()
+removeFormElement()
+formElementsAreLive()",7,,,
+,,,org.jsoup.parser.CharacterReader,int nextIndexOf(CharSequence seq),"CyclomaticComplexity, CognitiveComplexity",org.jsoup.parser.CharacterReaderTest,"nextIndexOfString()
+nextIndexOfUnmatched()",2,,,
+,,,org.jsoup.parser.TokenQueue,String escapeCssIdentifier(String in),"CyclomaticComplexity, CognitiveComplexity",org.jsoup.parser.TokenQueueTest,"escapeCssIdentifier(String, String)",1,"1 parameterized test with 57 test cases
+",,
+,,,org.jsoup.parser.TokenQueue,"chompBalanced(char open, char close)","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",org.jsoup.parser.TokenQueueTest,"chompBalanced()
+chompEscapedBalanced()
+chompBalancedMatchesAsMuchAsPossible()
+chompBalancedThrowIllegalArgumentException()
+testQuotedPattern()
+testedNestedQuotes()",6,,,37
+,,,org.jsoup.parser.TokenQueue,String consumeCssIdentifier(),"CyclomaticComplexity, CognitiveComplexity",org.jsoup.parser.TokenQueueTest,"consumeEscapedId()
+consumeCssIdentifierWithEmptyInput()
+consumeCssIdentifier_WebPlatformTests",2,,,
+,,,org.jsoup.parser.TokenQueue,void consumeCssEscapeSequenceInto(StringBuilder out),"CyclomaticComplexity, CognitiveComplexity",org.jsoup.parser.TokenQueueTest,"consumeEscapedId()
+consumeCssIdentifierWithEmptyInput()",2,Tested indirectly.,,16
+openmrs/openmrs-core,https://github.com/openmrs/openmrs-core,"Java 8 (minimum)
+Maven
+JUnit 4 & 5 
+  ",liquibase.ext.sqlgenerator.core.ModifyColumnGenerator,String getModifyString(Database database),CyclomaticComplexity,liquibase.ext.sqlgenerator.core.ModifyColumnGeneratorTest,shouldGetModifyString(),1,Tested across 10 databases in a single test case.,,
+,,,org.openmrs.Concept,"public ConceptName getShortestName(Locale locale, Boolean exact)","CyclomaticComplexity, CognitiveComplexity",org.openmrs.ConceptTest,"getShortestName_shouldReturnTheShortestNameInAGivenLocaleForAConceptIfExactIsTrue()
+getShortestName_shouldReturnTheShortestNameForTheConceptFromAnyLocaleIfExactIsFalse()
+getShortestName_shouldReturnTheNameMarkedAsTheShortNameForTheLocaleIfItIsPresent()
+getShortestName_shouldReturnNullIfTheirAreNoNamesInTheSpecifiedLocaleAndExactIsTrue()",4,,,
+,,, org.openmrs.Duration,"Date addToDate(Date startDate, OrderFrequency frequency)","CyclomaticComplexity, NPathComplexity",org.openmrs.DurationTest,"addToDate_shouldAddSecondsWhenUnitIsSeconds()
+addToDate_shouldAddMinutesWhenUnitIsMinutes()
+addToDate_shouldAddHoursWhenUnitIsHours()
+addToDate_shouldAddDaysWhenUnitIsDays()
+addToDate_shouldAddMonthsWhenUnitIsMonths()
+addToDate_shouldAddYearsWhenUnitIsYears()
+addToDate_shouldAddTimeBasedOnFrequencyWhenUnitIsRecurringInterval()
+addToDate_shouldFailWhenUnitIsRecurringAndFrequencyIsUnknown()
+addToDate_shouldFailWhenUnitIsUnknown()",9,,,
+,,, org.openmrs.Encounter,void addObs(Obs observation),"CyclomaticComplexity, CognitiveComplexity", org.openmrs.EncounterTest,"addObs_shouldAddObsWithNullValues()
+addObs_shouldNotFailWithNullObs()
+addObs_shouldSetEncounterAttributeOnObs()
+addObs_shouldAddObsToNonNullInitialObsSet()
+addObs_shouldAddEncounterAttrsToObsIfAttributesAreNull()
+addObs_shouldAddEncounterAttrsToObsGroupMembersIfAttributesAreNull()",6,,,
+,,,org.openmrs.Order,boolean isExpired(Date aCheckDate),CyclomaticComplexity,org.openmrs.OrderTest,"isExpired_shouldReturnFalseForAVoidedOrder()
+isExpired_shouldReturnFalseIfDateStoppedAndAutoExpireDateAreBothNull()
+isExpired_shouldReturnFalseIfDateStoppedIsNullAndAutoExpireDateIsEqualToCheckDate()
+isExpired_shouldReturnFalseIfDateStoppedIsNullAndAutoExpireDateIsAfterCheckDate()
+isExpired_shouldReturnFalseIfCheckDateIsAfterBothDateStoppedAutoExpireDate()
+isExpired_shouldReturnFalseIfDateActivatedIsAfterCheckDate()
+isExpired_shouldReturnFalseIfCheckDateIsAfterDateStoppedButBeforeAutoExpireDate()
+isExpired_shouldFailIfDateStoppedIsAfterAutoExpireDate()
+isExpired_shouldReturnTrueIfDateStoppedIsNullAndAutoExpireDateIsBeforeCheckDate()",9,,,
+,,,org.openmrs.Person,void addAttribute(PersonAttribute newAttribute),"CognitiveComplexity, CyclomaticComplexity",org.openmrs.api.db.PatientDAOTest,"getPatients_shouldFindPatientsEfficiently()
+mergePatients_shouldAuditCreatedAttributes()
+shouldAddRemoveAttribute()
+addAttribute_shouldNotSaveAnAttributeWithABlankStringValue()
+addAttribute_shouldNotSaveAnAttributeWithANullValue()
+addAttribute_shouldVoidOldAttributeWhenANullOrBlankStringValueIsAdded()
+personHelper(boolean, int, int, int, String, String, String, ...)",7,,,
+,,,org.openmrs.Person,PersonName getPersonName(),CognitiveComplexity,"org.openmrs.api.db.hibernat.HibernatePersonDAOTest
+ org.openmrs.api.PatientServiceTest
+org.openmrs.PersonTest","getPeople_shouldGetMultiplePeopleByFamilyName2()
+getPeople_shouldGetMultipleDeadPeople()
+getCountOfPatients_shouldReturnTheRightCountWhenAPatientHasMultipleMatchingPersonNames()
+getPersonName_shouldReturnNullIfPersonIsNotvoidedAndHaveVoidedNames()
+checkGetPersonNameResultForVoidedPerson(PersonName, Set<PersonName>)
+getName_shouldReturnPersonFullNameIfPersonIsNotNullOrNullOtherwise()",6,,,
+,,,org.openmrs.Person,PersonAddress getPersonAddress(),CognitiveComplexity,org.openmrs.PersonTest,"getPersonAddress_shouldGetVoidedPersonAddressIfPersonIsVoidedAndNotvoidedAddressDoesNotExist()
+getPersonAddress_shouldReturnNullIfPersonIsNotvoidedAndHaveVoidedAddress()
+checkGetPersonAddressResultForVoidedPerson(PersonAddress, Set<PersonAddress>)",3,,,
+,,,org.openmrs.PersonName,"int compare(PersonName pn1, PersonName pn2) ","CyclomaticComplexity, NPathComplexity","org.openmrs.util.DrugsByNameComparatorTest
+org.openmrs.util.ProviderByPersonNameComparatorTest","compareDrugNamesIgnoringNumericals_shouldReturnNegativeIfNameForDrug1ComesBeforeThatOfDrug2()
+compareDrugNamesIgnoringNumericals_shouldReturnZeroIfNameForDrug1ComesBeforeThatOfDrug2()
+compareDrugNamesIgnoringNumericals_shouldReturnPositiveIfNameForDrug1ComesBeforeThatOfDrug2IgnoringDashes()
+compareDrugNamesIgnoringNumericals_shouldReturnPositiveIfNameForDrug1ComesBeforeThatOfDrug2IgnoringNumerics()
+compareProvidersByPersonsName_shouldReturnNegativeIfPersonNameForProvider1ComesBeforeThatOfProvider2()
+compareProvidersByPersonName_shouldReturnPositiveIfPersonNameForProvider1ComesAfterThatOfProvider2()
+compareProvidersByPersonName_shouldReturnZeroIfTheGivenNameMiddleNameAndFamilyNameMatch()
+compareProvidersByPersonName_shouldNotFailIfProvider1HasNoAssociatedPerson()
+compareProvidersByPersonName_shouldNotFailIfProvider2HasNoAssociatedPerson()
+compareProvidersByPersonName_shouldNotFailIfNeitherProviderHasAnAssociatedPerson()",10,,,
+,,,org.openmrs.aop.RequiredDataAdvice,"static Collection<OpenmrsObject> getChildCollection(OpenmrsObject openmrsObject, Field field)",CyclomaticComplexity,org.openmrs.aop.RequiredDataAdviceTest,"getChildCollection_shouldGetValueOfGivenChildCollectionOnGivenField()
+getChildCollection_shouldShouldBeAbleToGetAnnotatedPrivateFields()
+getChildCollection_shouldThrowAPIExceptionIfGetterMethodNotFound()",3,,,
+,,,org.openmrs.api.db.hibernate.HibernateAdministrationDAO,"void validate(Object object, Errors errors)","CyclomaticComplexity, CognitiveComplexity",org.openmrs.api.db.hibernate.HibernateAdministrationDAOTest,"validate_shouldFailValidationForLocationClassIfFieldLengthsAreNotCorrect()
+validate_shouldFailValidationIfFieldLengthsAreNotCorrect()
+validate_shouldPassValidationForLocationClassIfFieldLengthsAreCorrect()
+validate_shouldPassValidationIfFieldLengthsAreCorrect()",4,,,
+,,,org.openmrs.api.impl.PatientServiceImpl,PatientIdentifier savePatientIdentifier(PatientIdentifier patientIdentifier),CyclomaticComplexity,org.openmrs.api.PatientServiceTest,"savePatientIdentifier_shouldThrowAnAPIExceptionWhenANullArgumentIsPassed()
+savePatientIdentifier_shouldAllowLocationToBeNullWhenLocationBehaviourIsRequired()
+savePatientIdentifier_shouldThrowAnAPIExceptionIfThePatientIdentifierStringIsAnEmptyString()
+savePatientIdentifier_shouldThrowAnAPIExceptionIfThePatientIdentifierStringIsAWhiteSpace()
+savePatientIdentifier_shouldThrowAnAPIExceptionWhenOneOfTheRequiredFieldsIsNull()
+savePatientIdentifier_shouldUpdateAnExistingPatientIdentifier()
+savePatientIdentifier_shouldCreateNewPatientIndentifier()",7,,,
+,,,org.openmrs.api.implPatientServiceImpll,"Allergies setAllergies(Patient patient, Allergies allergies)","CyclomaticComplexity, CognitiveComplexity",org.openmrs.api.PatientServiceAllergyTest,"setAllergies_shouldSaveTheAllergyListAndStatus()
+setAllergies_shouldVoidRemovedAllergiesAndMaintainStatusAsSeeListIfSomeAllergiesAreRemoved()
+setAllergies_shouldVoidAllAllergiesAndSetStatusToUnknownIfAllAllergiesAreRemoved()
+setAllergies_shouldVoidAllAllergiesAndSetStatusToNoKnownAllergiesIfAllAllergiesAreRemovedAndStatusSetAsSuch()
+setAllergies_shouldSetStatusToNoKnownAllergiesForPatientWithoutAllergies()
+setAllergies_shouldVoidAllergiesWithEditedComment()
+setAllergies_shouldVoidAllergiesWithEditedSeverity()
+setAllergies_shouldVoidAllergiesWithEditedCodedAllergen()
+setAllergies_shouldVoidAllergiesWithEditedNonCodedAllergen()
+setAllergies_shouldVoidAllergiesWithRemovedReactions()
+setAllergies_shouldVoidAllergiesWithAddedReactions()
+setAllergies_shouldVoidAllergiesWithEditedReactionCoded()
+setAllergies_shouldVoidAllergiesWithEditedReactionNonCoded()
+setAllergies_shouldSetTheNonCodedConceptForNonCodedAllergenIfNotSpecified()",14,,,
+,,,org.openmrs.api.implProgramWorkflowServiceImpll,"void triggerStateConversion(Patient patient, Concept trigger, Date dateConverted)","CyclomaticComplexity, CognitiveComplexity",org.openmrs.api.ProgramWorkflowServiceTest,"triggerStateConversion_shouldThrowConvertStateInvalidDate()
+triggerStateConversion_shouldThrowConvertStatePatientWithoutValidTrigger()
+triggerStateConversion_shouldThrowConvertStateInvalidPatient()",3,,,
+,,,org.openmrs.hl7.handler.ORUR01Handler,"void processNK1(Patient patient, NK1 nk1)","CyclomaticComplexity, CognitiveComplexity, NPathComplexity",org.openmrs.hl7.handler.ORUR01HandlerTest,"processNK1_shouldFailIfTheCodingSystemIsNot99REL()
+processNK1_shouldFailIfTheRelationshipIdentifierIsFormattedImproperly()
+processNK1_shouldFailIfTheRelationshipTypeIsNotFound()
+processNK1_shouldCreateARelationshipFromANK1Segment()
+processNK1_shouldNotCreateARelationshipIfOneExists()
+processNK1_shouldCreateAPersonIfTheRelativeIsNotFound()",6,,,
+,,,org.openmrs.hl7.impl.HL7ServiceImpl,Person createPersonFromNK1(NK1 nk1) throws HL7Exception,"CyclomaticComplexity, CognitiveComplexity, NPathComplexity",org.openmrs.hl7.HL7ServiceTest,"getPersonFromNK1_shouldFailIfNoGenderSpecified()
+getPersonFromNK1_shouldFailIfAPersonWithTheSameUUIDExists()
+getPersonFromNK1_shouldFailOnAnInvalidGender()
+getPersonFromNK1_shouldReturnAPatientIfValidPatientIdentifiersExist()
+getPersonFromNK1_shouldFailIfNoBirthdateSpecified()
+getPersonFromNK1_shouldReturnASavedNewPerson()",6,,,
