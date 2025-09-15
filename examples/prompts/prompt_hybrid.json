@@ -1,0 +1,22 @@
+{
+  "instruction": "Based on the above JSON context, refactor each code unit to reduce code complexity while preserving external behavior. Return only the refactored code for each unit. Do not include any additional explanations, commentary, or non-code text.",
+  "file": "ExampleClass.java",
+  "classes": [
+    {
+      "type_signature": "public class ExampleClass { ... }",
+      "violations": [
+        {
+          "block_type": "Method",
+          "extracted_code": "public void exampleMethod() { ... }",
+          "issues": [
+            {
+              "rule": "CognitiveComplexity",
+              "message": "The method 'exampleMethod()' has a cyclomatic complexity of 16."
+            }
+          ],
+          "refactoring_objective": "Reduce excessive branching by breaking down complex logic into smaller, reusable methods."
+        }
+      ]
+    }
+  ]
+}
